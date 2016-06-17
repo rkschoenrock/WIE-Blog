@@ -90,10 +90,16 @@ a {
 }
 
 
+/* ---- Begin Wrapper 80% ---*/
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*-- (index.php) Latest Post --*/
 .banner-latest-post {
     background-color: #b9d2cc;
-    padding: 40px
+    padding: 40px;
 }
 
 .banner-latest-post h2, .banner-latest-post h3, .banner-latest-post a {
@@ -104,6 +110,40 @@ a {
 
 .banner-thumbnail {
     width: 300px;
+    margin: auto;
+    display: block;
+}
+
+
+/*--- (index.php) Boxed Latest Posts ---*/
+
+.boxed-latest-posts {
+    margin: 20px;
+}
+
+.boxed-single-post {
+    width: calc(100% / 3 - 60px);
+    margin: 20px;
+    display: inline-block;
+    float: left;
+    border: 1px solid #52452e;
+}
+
+.boxed-latest-posts h3 {
+    padding: 10px;
+    margin-bottom: 0px;
+    background-color: #ccbca3;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boxed-latest-posts h3 a {
+    color: white;
+}
+
+.boxed-thumbnail {
+    padding: 10px;
+    width: 150px;
     margin: auto;
     display: block;
 }

@@ -15,17 +15,11 @@
         <div class="post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <div class="banner-thumbnail">
                 <?php
-
                 if ( function_exists( 'add_theme_support' ) ) {
-
                 	add_theme_support( 'post-thumbnails' ); // enable feature
-
                 	set_post_thumbnail_size( 96, 96, true ); // default size
-
                 	add_image_size( 'custom-banner-thumbnail', 300, 300, true ); // custom size
-
                 }
-
                 ?>
                 <?php
                     if ( has_post_thumbnail() ) {
@@ -39,27 +33,36 @@
     </section>
     <!-- End Header: Latest Post-->
 
-    <section class="row">
+    <!-- Begin Section Wrapper -->
+
+    <section class="row wrapper">
         <div class="twelve columns">
             <!-- Begin Loop -->
-            <?php
-                if ( have_posts() ) {
+            <div class="boxed-latest-posts">
+                <?php
+                    if ( have_posts() ) {
                     while ( have_posts() ) {
-                        the_post(); ?>
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></></h3>
-                            <?php
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('thumbnail');
-                                }
-                            ?>
+                        the_post();
+                ?>
+                <div class="boxed-single-post">
+                <div class="boxed-thumbnail">
                     <?php
-                    } //end while
-                } //end if
-            ?>
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail('thumbnail');
+                        }
+                    ?>
+                </div>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></></h3>
+                </div>
+                        <?php
+                        } //end while
+                    } //end if
+                ?>
+            </div>
             <!-- End Loop -->
         </div>
     </section>
-<!-- End Section Containter -->
+<!-- End Section Wrapper + Container -->
 
 
 <?php get_footer(); ?>
