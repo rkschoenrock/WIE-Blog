@@ -57,11 +57,9 @@ add_action('widgets_init', 'blank_widgets_init');
 add_theme_support('menus');
 
 
-/*---------- Enable Search in Menu --------*/
-
-
-
-
 /*--- Enable Post Thumbnails ---*/
 
 add_theme_support( 'post-thumbnails' );
+
+
+/*----- Custom Banner Thumbnail (index.php) -----*/

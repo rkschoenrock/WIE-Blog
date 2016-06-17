@@ -23,30 +23,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.0rem;
+    font-size: 3.0rem;
+    text-align: center;
+    margin-top: 20px;
 }
 h2 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 h3 {
-  font-size: 2.0rem;
+    font-size: 2.0rem;
 }
 h4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 h5 {
-  font-size: 1.0rem;
+    font-size: 1.0rem;
 }
 
 a {
-  font-weight: 700;
-  text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 /*--- Menu --- */
 
+.centermenu {
+    width: 700px;
+    margin: auto;
+}
+
 .blank-menu-header {
-    text-align: left;
+    text-align: center;
     margin-top: 40px;
     float: left;
 }
@@ -62,7 +69,7 @@ a {
 .blank-menu-header ul li a {
     text-decoration:none;
     margin: 4px;
-    padding: 5px 0px 5px 40px;
+    padding: 5px 20px 5px 20px;
     font-weight: 300;
     font-size: 1.1rem;
 }
@@ -77,6 +84,26 @@ a {
 @media screen and (min-width: 600px) {
 	.header-search {
         display: block;
-        float: right;
+        float: left;
+        padding: 5px 20px 5px 20px;
     }
+}
+
+
+/*-- (index.php) Latest Post --*/
+.banner-latest-post {
+    background-color: #b9d2cc;
+    padding: 40px
+}
+
+.banner-latest-post h2, .banner-latest-post h3, .banner-latest-post a {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner-thumbnail {
+    width: 300px;
+    margin: auto;
+    display: block;
 }

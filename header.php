@@ -18,15 +18,16 @@
             </div>
         </header>
 
-        <div class="row">
+        <nav class="row">
             <div class="twelve columns">
-                <?php
-                    wp_nav_menu(array(
-                        'sort_column' => 'menu_order',
-                        'container_class' => 'blank-menu-header'
-                    ));
-                ?>
-
+                    <div class="centermenu">
+                    <?php
+                        wp_nav_menu(array(
+                            'sort_column' => 'menu_order',
+                            'container_class' => 'blank-menu-header'
+                        ));
+                    ?>
                     <div class="header-search"><?php get_search_form(); ?></div>
+                </div>
             </div>
-        </div>
+        </nav>
