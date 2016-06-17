@@ -1,5 +1,5 @@
 /*
-Theme Name: Rebecca Schoenrock Blank Theme
+Theme Name: WIE Blog Rebecca Schoenrock Theme
 Theme URI:
 Author: Rebecca Schoenrock
 Description: Blank theme for WIE course
@@ -48,6 +48,7 @@ a {
 .blank-menu-header {
     text-align: left;
     margin-top: 40px;
+    float: left;
 }
 .blank-menu-header ul {
     margin: 0;
@@ -67,4 +68,15 @@ a {
 }
 .blank-menu-header ul li a:hover {
     color: #cccccc;
+}
+
+.header-search {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+	.header-search {
+        display: block;
+        float: right;
+    }
 }

@@ -15,9 +15,9 @@
         <header class="row">
             <div class="twelve columns">
                 <h1><a href="<?php $url = home_url('/'); echo $url; ?>"><?php bloginfo('name'); ?></a></h1>
-                <h2><?php bloginfo('description'); ?></h2>
             </div>
         </header>
+
         <div class="row">
             <div class="twelve columns">
                 <?php
@@ -26,5 +26,7 @@
                         'container_class' => 'blank-menu-header'
                     ));
                 ?>
+
+                    <div class="header-search"><?php get_search_form(); ?></div>
             </div>
         </div>
