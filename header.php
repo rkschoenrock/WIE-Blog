@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="
         <?php bloginfo('stylesheet_url'); ?>
     " />
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container"> <!-- Begin Container Div -->

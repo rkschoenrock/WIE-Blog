@@ -12,37 +12,58 @@ Text Domain: rebecca_schoenrock_blank_template
 @import url("stylesheets/skeleton.css");
 
 html, body {
-    color: #000000;
+    color: #52452e;
     font-size: 14px;
     line-height: 1.5em;
 }
 
+@font-face {
+    font-family: Jenna Sue;
+    src: url(fonts/JennaSue.ttf);
+}
+
 h1, h2, h3, h4, h5, h6 {
-    color: #999999;
-    font-weight: 700;
+    color: #52452e;
 }
 
 h1 {
-    font-size: 3.0rem;
+    font-size: 6.0rem;
     text-align: center;
     margin-top: 20px;
+    font-family: Jenna Sue;
+}
+h1 a {
+    color: #52452e;
 }
 h2 {
     font-size: 2.5rem;
+    font-family: 'Work Sans', sans-serif;
 }
 h3 {
     font-size: 2.0rem;
+    font-family: 'Work Sans', sans-serif;
 }
 h4 {
     font-size: 1.5rem;
+    font-family: 'Work Sans';
 }
 h5 {
     font-size: 1.0rem;
+    font-family: 'Work Sans';
+}
+
+p {
+    font-family: 'Work Sans';
 }
 
 a {
-    font-weight: 700;
     text-decoration: none;
+}
+
+.centermenu {
+    font-family: 'Work Sans';
+    text-transform: uppercase;
+    color: #52452e;
 }
 
 /*--- Menu --- */
@@ -71,7 +92,9 @@ a {
     margin: 4px;
     padding: 5px 20px 5px 20px;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #52452e;
 }
 .blank-menu-header ul li a:hover {
     color: #cccccc;
@@ -108,6 +131,11 @@ a {
     text-transform: uppercase;
 }
 
+.banner-latest-post h2 {
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+
 .banner-thumbnail {
     width: 300px;
     margin: auto;
@@ -135,6 +163,7 @@ a {
     background-color: #ccbca3;
     text-align: center;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .boxed-latest-posts h3 a {
@@ -146,4 +175,24 @@ a {
     width: 150px;
     margin: auto;
     display: block;
+}
+
+
+/* --- Begin Footer ---*/
+footer {
+    background-color: #b9d2cc;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+.footerleft {
+    float: left;
+}
+
+.footerright {
+    float: right;
+    text-align: right;
 }
