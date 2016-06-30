@@ -147,6 +147,7 @@ a {
 
 .boxed-latest-posts {
     margin: 20px;
+    max-height: 250px;
 }
 
 .boxed-single-post {
@@ -164,6 +165,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    min-height: 52px;
 }
 
 .boxed-latest-posts h3 a {
@@ -172,9 +174,20 @@ a {
 
 .boxed-thumbnail {
     padding: 10px;
-    width: 150px;
+    max-width: 150px;
     margin: auto;
     display: block;
+}
+
+@media all and (max-width: 900px) {
+    .boxed-thumbnail img {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+    .boxed-latest-posts h3 {
+        font-size: 90%;
+    }
 }
 
 

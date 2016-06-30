@@ -12,20 +12,23 @@
                 foreach ($postslist as $post) :
                 setup_postdata($post);
             ?>
-        <div class="post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <div class="post">
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <div class="banner-thumbnail">
-                <?php
-                if ( function_exists( 'add_theme_support' ) ) {
-                	add_theme_support( 'post-thumbnails' ); // enable feature
-                	set_post_thumbnail_size( 96, 96, true ); // default size
-                	add_image_size( 'custom-banner-thumbnail', 300, 300, true ); // custom size
-                }
-                ?>
-                <?php
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('custom-banner-thumbnail');
+                <a href="<?php the_permalink(); ?>">
+                    <?php
+                    if ( function_exists( 'add_theme_support' ) ) {
+                    	add_theme_support( 'post-thumbnails' ); // enable feature
+                    	set_post_thumbnail_size( 96, 96, true ); // default size
+                    	add_image_size( 'custom-banner-thumbnail', 300, 300, true ); // custom size
                     }
-                ?>
+                    ?>
+                    <?php
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail('custom-banner-thumbnail');
+                        }
+                    ?>
+                </a>
             </div>
         </div>
             <?php endforeach ?>
@@ -45,14 +48,16 @@
                         the_post();
                 ?>
                 <div class="boxed-single-post">
-                <div class="boxed-thumbnail">
-                    <?php
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('thumbnail');
-                        }
-                    ?>
-                </div>
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></></h3>
+                    <div class="boxed-thumbnail">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail('thumbnail');
+                                }
+                            ?>
+                        </a>
+                    </div>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                 </div>
                         <?php
                         } //end while
