@@ -254,3 +254,28 @@ footer p {
 .eight p:last-child {
     margin-bottom: 30px;
 }
+
+
+/* STACKED FOUR-EIGHT PAGE (LIST OF POSTS) */
+
+.floatthumbnailright img {
+    float: right;
+    margin-right: 40px;
+}
+
+.dark-link a {
+    color: #52452e;
+}
+
+.dark-link a:hover {
+    color: #1EAEDB;
+}
+
+.prev a, .next a {
+    background-color: #ccbca3;
+    margin: 20px;
+    padding: 20px;
+    float: right;
+    color: white;
+    text-transform: uppercase;
+}
