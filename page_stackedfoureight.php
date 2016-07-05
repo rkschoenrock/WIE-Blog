@@ -33,11 +33,13 @@ Template name: STACKEDFourEightWidth
 
           <div class="row">
             <div class="four columns floatthumbnailright">
-              <?php
-                  if ( has_post_thumbnail() ) {
-                      the_post_thumbnail('thumbnail');
-                  }
-              ?>
+                <a href="<?php the_permalink(); ?>" title="Read more">
+                  <?php
+                      if ( has_post_thumbnail() ) {
+                          the_post_thumbnail('thumbnail');
+                      }
+                  ?>
+              </a>
             </div>
 
             <div class="eight columns">
