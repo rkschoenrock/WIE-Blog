@@ -405,3 +405,11 @@ input[type="search"] {
     background-color: #fff;
     float: right;
 }
+
+.post-content {
+    padding: 40px;
+}
+
+.post-content h2 {
+    margin-top: 40px;
+}

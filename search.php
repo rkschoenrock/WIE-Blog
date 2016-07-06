@@ -3,23 +3,26 @@
 get_header(); ?>
 
 <div class="row">
-    <div class="eight columns">
+    <div class="twelve columns banner-latest-post">
         <?php if( have_posts() ) :?>
-            <h1>
+            <h2>
             <?php printf(
                 get_search_query() );
-            ?></h1>
-            <?php while (have_posts()) : the_post(); ?>                       <h2><?php the_title(); ?></h2>
+            ?></h2>
+    </div>
+    <div class="post-content">
+            <?php while (have_posts()) : the_post(); ?>
 				<h2><?php the_title(); ?></h2>
 				<?php the_content();
             endwhile;
          else : ?>
-            <h1>Nothing Found</h1>
+    </div>
+    <div class="twelve columns banner-latest-post">
+            <h2>Nothing Found</h2>
+    </div>
+    <div class="post-content">
             <p>Sorry, but nothing matched your search criteria. Please try again with different search terms.</p>
         <?php endif; ?>
-    </div>
-    <div class="four columns">
-        <?php get_sidebar(); ?>
     </div>
 </div>
 
