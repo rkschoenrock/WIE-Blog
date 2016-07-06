@@ -9,6 +9,7 @@
         <?php bloginfo('stylesheet_url'); ?>
     " />
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container"> <!-- Begin Container Div -->

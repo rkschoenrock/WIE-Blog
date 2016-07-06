@@ -27,10 +27,25 @@
 
 
 
-        <div class="post-navigation">
-        	<div class="navigation-previous">OLDER: <?php previous_post_link('%link') ?></div>
+        <!---div class="post-navigation">
+            <div class="navigation-previous">OLDER: <?php previous_post_link('%link') ?></div>
         	<div class="navigation-next">NEWER: <?php next_post_link('%link') ?></div>
+        </div-->
+        <div class="navigation-previous">
+            <?php if (strlen(get_previous_post()->post_title) > 0) { ?>
+                OLDER: <?php previous_post_link( '%link', '%title' ) ?> >
+            <?php } else {
+                echo "NO OLDER POSTS";
+            }?>
         </div>
+        <div class="navigation-next">
+            <?php if (strlen(get_next_post()->post_title) > 0) { ?>
+                < NEWER: <?php next_post_link( '%link', '%title' ) ?>
+            <?php } else {
+                echo "NO NEWER POSTS";
+            }?>
+        </div>
+
 
 <!-- End Page PHP -->
         </div>

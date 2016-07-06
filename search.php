@@ -7,8 +7,7 @@ get_header(); ?>
         <?php if( have_posts() ) :?>
             <h1>
             <?php printf(
-                __('Search Results for: %s'),
-                '<span>' . get_search_query() . '</span>' );
+                get_search_query() );
             ?></h1>
             <?php while (have_posts()) : the_post(); ?>                       <h2><?php the_title(); ?></h2>
 				<h2><?php the_title(); ?></h2>
