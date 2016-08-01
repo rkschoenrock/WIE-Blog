@@ -26,6 +26,56 @@ html, body {
     line-height: 1.5em;
 }
 
+@media screen and (max-width: 600px) {
+    h1, h2, h3, h4 {
+        line-height: 3.0rem;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+    }
+    p {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+    header form {
+        display: none;
+    }
+    header img {
+        margin: auto;
+        display: block;
+    }
+    #cssmenu {
+        width: 100%;
+    }
+    #cssmenu ul li {
+        display: block;
+    }
+    #cssmenu ul li ul li {
+        display: none;
+    }
+    .boxed-latest-posts {
+        width: 80%;
+        margin: auto;
+        display: block;
+        padding: 0;
+    }
+    .boxed-single-post, .boxed-single-post h3 a {
+
+            width: 90%;
+            margin: auto;
+            display: block;
+            padding: 0;
+    }
+    .background-thumbnail h2 {
+        padding: 150px 0px;
+    }
+    .excerpt {
+        width: 100%;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #999999;
 }
@@ -291,9 +341,11 @@ footer a:hover {
     font-size: 2.0rem;
     color: #405783;
 }
-.boxed-latest-posts {
+@media screen and (min-width: 600px) {
+    .boxed-latest-posts {
     width: 1027px;
     margin: auto;
+}
 }
 .boxed-single-post {
     display: inline-block;
@@ -401,10 +453,12 @@ footer a:hover {
 .blogthumbnail img:hover {
     opacity: 0.5;
 }
-.excerpt {
-    display: inline-block;
-    float: right;
-    width: calc(100% - 320px);
+@media screen and (min-width: 600px) {
+    .excerpt {
+        display: inline-block;
+        float: right;
+        width: calc(100% - 320px);
+    }
 }
 .excerpt p {
     padding: 0px;
@@ -434,8 +488,12 @@ footer a:hover {
 	position: relative;
     min-height: 100%;
 }
+@media screen and (min-width: 600px) {
+    .background-thumbnail h2 {
+        padding: 150px;
+    }
+}
 .background-thumbnail h2 {
-    padding: 150px;
     text-align: center;
     font-size: 3.0rem;
     color: #fff;
@@ -450,20 +508,23 @@ footer a:hover {
 
 
 /*-----CONTACT--------*/
-.contactpageleft {
-    width: 47%;
-    float: left;
-    display: inline-block;
-    margin-botom: 20px;
-}
-iframe {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.contactpageright {
-    width: 47%;
-    float: right;
-    display: inline-block;
+@media screen and (min-width: 600px) {
+    .contactpageleft {
+        width: 47%;
+        float: left;
+        display: inline-block;
+        margin-botom: 20px;
+    }
+
+    iframe {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .contactpageright {
+        width: 47%;
+        float: right;
+        display: inline-block;
+    }
 }
 .contactpage h2 {
     padding: 40px;
@@ -567,13 +628,17 @@ iframe {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+@media screen and (min-width: 600px) {
+    #cssmenu ul {
+    width: 730px;
+  }
+}
 #cssmenu ul {
   list-style: none;
   margin: auto;
   padding: 0;
   display: block;
   font-size: 1.5rem;
-  width: 730px;
 }
 #cssmenu ul:after,
 #cssmenu:after {
@@ -686,8 +751,10 @@ iframe {
   max-height: 72px;
   position: relative;
 }
+@media screen and (min-width: 600px) {
 #cssmenu > ul > li {
   float: left;
+}
 }
 #cssmenu.align-center > ul > li {
   float: none;
@@ -731,6 +798,7 @@ iframe {
 #cssmenu > ul > li.has-sub > a {
   padding-right: 40px;
 }
+@media screen and (min-width: 600px) {
 #cssmenu > ul > li.has-sub > a:after {
   display: block;
   content: '';
@@ -753,6 +821,12 @@ iframe {
   position: absolute;
   right: 16px;
   top: 21px;
+}
+}
+@media screen and (max-width: 600px){
+#cssmenu > ul > li.has-sub > a:after,  #cssmenu > ul > li.has-sub > a:before {
+    display: none;
+}
 }
 #cssmenu > ul > li > a {
   color: #ffffff;
@@ -801,9 +875,11 @@ iframe {
   width: 170px;
   display: block;
 }
+@media screen and (min-width: 600px) {
 #cssmenu > ul > li > ul > li {
   width: 170px;
   display: block;
+}
 }
 
 
